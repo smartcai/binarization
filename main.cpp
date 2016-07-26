@@ -177,7 +177,7 @@ void executeClusteringAndBinarization(IplImage *gr, IplImage *im, cv::Mat niblac
   // Build the feature space
   int w = im->width;
   int h = im->height;
-  int dim = 256;
+  const int dim = 256;
   cv::Mat contrast = cv::Mat(im);
   cv::Mat gray = cv::Mat(gr);
   int fs[dim][dim];
